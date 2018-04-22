@@ -1,0 +1,11 @@
+https://docs.npmjs.com/getting-started/uninstalling-local-packages
+
+npm init
+npm i bootstrap
+npm i jquery
+npm i popper
+
+
+#sudo apt install ruby-sass
+
+sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler
