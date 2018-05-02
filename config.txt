@@ -1,11 +1,16 @@
 https://docs.npmjs.com/getting-started/uninstalling-local-packages
+https://material.io/guidelines/style/color.html#color-color-palette
+https://getbootstrap.com/docs/4.0/utilities/colors/
+
+==================instalação dos pacotes pela primeira vez==================
 
 npm init
 npm i bootstrap
 npm i jquery
-npm i popper
+npm i popper.js
+npm i font-awesome
 
+============================compilação do scss para scc=====================
 
-#sudo apt install ruby-sass
-
-sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler
+sass --watch node_modules/bootstrap/scss:css
+sass --watch scss:css
