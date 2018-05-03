@@ -195,7 +195,8 @@ img::selection {
 img::-moz-selection {
   background: transparent; }
 
-button[title] {
-  color: black; }
+.popover {
+  z-index: 1060;
+  max-width: 60%; }
 
 /*# sourceMappingURL=styles.css.map */
