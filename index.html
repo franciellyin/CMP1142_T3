@@ -15,13 +15,17 @@
   <title>Trabalho 3</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bd-navbar fixed-top" id="mainNav">
+<body id="page-top" data-spy="scroll">
+
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#">Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
       </button>
+      <!--id "navbarResponsive Responsável em gerar o Toggle menu quando estiver em um dispositivo menor-->
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
@@ -47,164 +51,214 @@
     </div>
   </nav>
 
-  <!-- slide -->
-  <section id="slide">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" width="700" height="600" src="./img/bootstrap.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" width="700" height="600" src="./img/html5.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" width="700" height="600" src="./img/javascript.jpg" alt="Third slide">
+  <!-- Intro Header -->
+  <header class="masthead transparence">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto" />
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
     </div>
-  </section>
+  </header>
 
   <!-- introdução -->
-  <section id="introducao">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">Introdução</h1>
-      </div>
-    </div>
+
+  <section id="introducao" class="content-section text-center">
     <div class="container">
-      <div class="row text-center">
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Introdução</h2>
+          <!--Versão 1.0-->
+          <a href="#" id="linkV1" class="btn btn-primary" tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="top" data-popover-content="#v1">Versão 1.0</a>
+          <!--Versão 1.0-->
+          <a href="#" id="linkV2" class="btn btn-primary" tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-popover-content="#v2">Versão 2.0</a>
+          <!--Versão 1.0-->
+          <a href="#" id="linkV3" class="btn btn-primary" tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="top" data-popover-content="#v3">Versão 3.0</a>
+          <!--Versão 1.0-->
+          <a href="#" id="linkV4" class="btn btn-primary" tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-popover-content="#v4">Versão 4.0</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- instalação -->
-  <section id="instalacao">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">Instalação</h1>
-      </div>
+  <div id="v1" hidden>
+    <div class="popover-heading">This is the heading for #2</div>
+
+    <div class="popover-body">This is the body for #2
+      <br> With
+      <b>html</b> content
     </div>
+  </div>
+
+  <div id="v2" hidden>
+    <div class="popover-heading">This is the heading for #2</div>
+
+    <div class="popover-body">This is the body for #2
+      <br> With
+      <b>html</b> content
+    </div>
+  </div>
+
+  <div id="v3" hidden>
+    <div class="popover-heading">This is the heading for #2</div>
+
+    <div class="popover-body">This is the body for #2
+      <br> With
+      <b>html</b> content
+    </div>
+  </div>
+
+  <div id="v4" hidden>
+    <div class="popover-heading">This is the heading for #2</div>
+
+    <div class="popover-body">This is the body for #2
+      <br> With
+      <b>html</b> content
+    </div>
+  </div>
+
+  <!-- instalação -->
+  <section id="instalacao" class="content-section text-center">
     <div class="container">
-      <div class="row text-center">
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Instalação</h2>
+          <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the
+            template on
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <p>This theme features stock photos by
+            <a href="http://gratisography.com/">Gratisography</a>
+            along with a custom Google Maps skin courtesy of
+            <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+          <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- responsividade -->
-  <section id="responsiv">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">Responsividade</h1>
-      </div>
-    </div>
+  <section id="responsiv" class="content-section text-center">
     <div class="container">
-      <div class="row text-center">
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Responsividade</h2>
+          <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the
+            template on
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <p>This theme features stock photos by
+            <a href="http://gratisography.com/">Gratisography</a>
+            along with a custom Google Maps skin courtesy of
+            <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+          <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- scss -->
-  <section id="scss">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">SCSS</h1>
-      </div>
-    </div>
+  <section id="scss" class="content-section text-center">
     <div class="container">
-      <div class="row text-center">
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>SCSS</h2>
+          <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the
+            template on
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <p>This theme features stock photos by
+            <a href="http://gratisography.com/">Gratisography</a>
+            along with a custom Google Maps skin courtesy of
+            <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+          <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- componentes -->
-  <section id="componentes">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">Componentes</h1>
-      </div>
-    </div>
+  <section id="componentes" class="content-section text-center">
     <div class="container">
-      <div class="row text-center">
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>componentes</h2>
+          <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the
+            template on
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <p>This theme features stock photos by
+            <a href="http://gratisography.com/">Gratisography</a>
+            along with a custom Google Maps skin courtesy of
+            <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+          <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- referencia -->
-  <section id="referencia">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">Referência</h1>
-      </div>
-    </div>
+  <section id="referencia" class="content-section text-center">
     <div class="container">
-      <div class="row text-center">
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Referência</h2>
+          <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the
+            template on
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <p>This theme features stock photos by
+            <a href="http://gratisography.com/">Gratisography</a>
+            along with a custom Google Maps skin courtesy of
+            <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+          <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <span class="">Copyright &copy; CMP1142</span>
+  <footer>
+    <div class="container text-center">
+      <p>Copyright &copy; CMP1142</p>
     </div>
   </footer>
 
   <!-- Optional JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" />
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" />
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/actions.js"></script>
+  <script>
+    $(function () {
+      $("[data-toggle=popover]").popover({
+        html: true,
+        content: function () {
+          var content = $(this).attr("data-popover-content");
+          return $(content).children(".popover-body").html();
+        },
+        title: function () {
+          var title = $(this).attr("data-popover-content");
+          return $(title).children(".popover-heading").html();
+        }
+      });
+    });
+    $(".popover-dismiss").popover(
+      {
+        trigger: "focus"
+      });
+    $('#linkV1').on('click', function(event){
+      event.preventDefault();
+    });
+    $('#linkV2').on('click', function(event){
+      event.preventDefault();
+    });
+    $('#linkV3').on('click', function(event){
+      event.preventDefault();
+    });
+    $('#linkV4').on('click', function(event){
+      event.preventDefault();
+    });
+  </script>
 </body>
 
 </html>
