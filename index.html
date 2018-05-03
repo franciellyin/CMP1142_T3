@@ -199,7 +199,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Instalação</h2>
-          
+
         </div>
       </div>
     </div>
@@ -211,16 +211,24 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Responsividade</h2>
-          <p>O uso efetivo das grids é fundamental para um bom projeto com o Bootstrap e entender a logica por trás disso é simples</p>
+          <p>O uso efetivo das grids é fundamental para um bom projeto com o Bootstrap e entender a logica por trás disso é
+            simples
+          </p>
           <p>O sistema de grids possibilita a divisão em até 12 colunas de mesma largura</p>
-          <img src="img/bootstrap-grid-1.jpg" class="img-fluid rounded" alt="Sistema de grids"/>
-          <p>O uso de grids possibilita mudar o visual de um site ou sistema de maneira fácil e ráida, alterando apenas o valor da largura das colunas</p>
-          <p>As grids são nativamente responsivas, a definição as grids para diferentes tipos de resolução, são definidos atravez das classes: <br>
-          <b>XS</b> para dispositivos muito pequenos <br>
-          <b>SM</b> para dispositivos pequenos <br>
-          <b>MD</b> para dispositivos médios <br>
-          <b>LG</b> para dispositivos grandes</p>
-          <img src="img/bootstrap-grid-responsive.jpg" class="img-fluid rounded" alt="Sistema de grids responsive"/>
+          <img src="img/bootstrap-grid-1.jpg" class="img-fluid rounded" alt="Sistema de grids" />
+          <p>O uso de grids possibilita mudar o visual de um site ou sistema de maneira fácil e ráida, alterando apenas o valor
+            da largura das colunas</p>
+          <p>As grids são nativamente responsivas, a definição as grids para diferentes tipos de resolução, são definidos atravez
+            das classes:
+            <br>
+            <b>XS</b> para dispositivos muito pequenos
+            <br>
+            <b>SM</b> para dispositivos pequenos
+            <br>
+            <b>MD</b> para dispositivos médios
+            <br>
+            <b>LG</b> para dispositivos grandes</p>
+          <img src="img/bootstrap-grid-responsive.jpg" class="img-fluid rounded" alt="Sistema de grids responsive" />
         </div>
       </div>
     </div>
@@ -232,7 +240,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <img src="img/sass.png" class="img-fluid rounded" width="50%" alt="SASS" />
-          
+
         </div>
       </div>
     </div>
@@ -244,14 +252,170 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>componentes</h2>
-          <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the
-            template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-          <p>This theme features stock photos by
-            <a href="http://gratisography.com/">Gratisography</a>
-            along with a custom Google Maps skin courtesy of
-            <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-          <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+          <p>O Bootstrap conta com uma quantidade enorme de componentes ja programados assim como Alerts, Buttons, Button Group,
+            Card, Forms, Navbar, Modal, Popovers entre outros</p>
+          <div>
+            <p>Alert</p>
+            <div class="alert alert-primary" role="alert">
+              Alert para informção
+            </div>
+            <div class="alert alert-warning" role="alert">
+              Alert
+              <a href="#" id="linkComponent" class="alert-link">Com Link</a>. para algum lugar.
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <strong>Alert</strong> com opção de fechar
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <div>
+            <p>Buttons</p>
+            <p>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-outline-success">Success</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-success btn-lg btn-block">Block level button</button>
+              <button type="button" class="btn btn-outline-success btn-lg btn-block">Block level button</button>
+            </p>
+          </div>
+          <div>
+            <p>Button Group</p>
+            <p>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Esquerda</button>
+                <button type="button" class="btn btn-secondary">Meio</button>
+                <button type="button" class="btn btn-secondary">Direita</button>
+              </div>
+            </p>
+            <p>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" id="btnGroupAddon">@</div>
+                </div>
+                <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+              </div>
+            </p>
+            <p>
+              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Dropdown
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link</a>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+          <div>
+            <p>Cards</p>
+            <p>
+              Cards com imagens
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/bootstrap.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text" style="color: black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </p>
+            <p>
+              Utilizando os elementos de grid para determinar a quantidade de colunas cada card irá ocupar
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: black">Special title treatment</h5>
+                      <p class="card-text" style="color: black">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: black">Special title treatment</h5>
+                      <p class="card-text" style="color: black">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </p>
+            <p>
+              Card com titulos
+              <div class="card w-75">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: black">Card title</h5>
+                  <p class="card-text" style="color: black">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </p>
+          </div>
+          <div class="jumbotron" style="color: black">
+            <p>Form</p>
+            <p>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1" style="text-align: left">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" id="formSubmit" class="btn btn-primary">Submit</button>
+              </form>
+            </p>
+          </div>
+          <div>
+            <p>Modal</p>
+            <p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Exibir Modal
+              </button>
+            </p>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+              style="color: black">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Bootstrap
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Popovers</p>
+            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="<span style='color: black'>Popover title</span>" data-content="And here's some amazing content. It's very engaging. Right?">Toggle popover</button>
+          </div>
         </div>
       </div>
     </div>
@@ -324,6 +488,15 @@
     $('#linkV4').on('click', function (event) {
       event.preventDefault();
     });
+    $('#linkComponent').on('click', function (event) {
+      event.preventDefault();
+    });
+    $('#formSubmit').on('click', function (event) {
+      event.preventDefault();
+    });
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
   </script>
 </body>
 
