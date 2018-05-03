@@ -205,7 +205,17 @@ a {
 
 .coding-section {
   color: white;
-  background: url('../img/bootstrap4.jpeg') no-repeat center center scroll;
+  background: url('../img/coding.jpg') no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.grid01{
+  color: white;
+  background: url('../img/bootstrap-grid-1.jpg') no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -268,7 +278,6 @@ img::-moz-selection {
 }
 
 .popover{
-  
   z-index: 1060;
   max-width: 60%;
 }
